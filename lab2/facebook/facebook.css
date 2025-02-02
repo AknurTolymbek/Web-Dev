@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+  }
+  
+  main {
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  
+  footer {
+    height: 25vh;
+    width: 100vw;
+    background-color: #ffffff;
+    padding: 10px 0; 
+    border-top: 1px solid #dddfe2; 
+  }
+  
+  .log-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card {
+    flex: 0 0 50%;
+    text-align: left;
+    margin-top: -140px;
+  }
+  
+  .log-form {
+    flex: 0 0 40%;
+    text-align: center;
+    margin: -15px 0px 0px 60px;
+  
+  }
+  
+  .logo {
+    max-width: 320px;
+    margin-left: -25px;
+    margin-bottom: -15px;
+  }
+  
+  .card h2 {
+    font-size: 28px; 
+    font-weight: 500;
+    line-height: 34px; 
+    max-width: 500px; 
+    word-wrap: break-word; 
+    padding: 0 0 0 20px; 
+    margin-left: -15px; 
+  }
+  
+  .log-form .form-cont {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 10px 15px 20px 15px;
+    max-width: 400px;
+  
+  }
+  
+  .log-form .form-cont input, .log-form .form-cont .login {
+    width: 100%;
+    margin: 7px 0;
+    height: 50px;
+    vertical-align: middle;
+    font-size: 17px;
+  }
+  
+  
+  .log-form .form-cont input {
+    border: 1px solid #dddfe2;
+    color: #606770; 
+    padding: 14px 16px; 
+    outline: none;
+    border-radius: 6px;
+  }
+  
+  
+  .log-form .form-cont input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    color: #1c1e21; 
+  }
+  
+  
+  
+  .log-form .form-cont .login {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 14px 16px;
+    color: #ffffff;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  .log-form .form-cont .login:hover {
+    background-color: #2f85f5; 
+  }
+  
+  
+  .log-form .form-cont a {
+    display: block;
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 0 25px;
+    border-bottom: 1px solid #dadde1;
+  }
+  
+  .log-form .form-cont .lost-password:hover{
+    text-decoration: underline;
+  }
+  
+  
+  .log-form .form-cont .create-new {
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 20px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+    display: block;
+    width: fit-content; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .log-form .form-cont .create-new:hover {
+    background-color: #439830; 
+  }
+  
+  .log-form p {
+    font-size: 14px;
+  }
+  
+  .log-form p a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-weight: 600;
+  }
+  
+  .log-form p a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .contents {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px; 
+  }
+  
+  footer ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 7px 0; 
+  }
+  
+  footer ol:first-child {
+    border-bottom: 1px solid #dddfe2;
+  }
+  
+  footer ol:first-child li:last-child button {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    outline: none;
+    color: #4b4f56;
+    padding: 0 6px;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  
+  footer ol li {
+    padding-right: 12px; 
+    font-size: 12px; 
+    color: #8a8d91; 
+    padding: 0px 16px 8px 0px;
+  }
+  
+  footer ol li a {
+    text-decoration: none;
+    color: #8a8d91;
+  }
+  
+  footer ol li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer small {
+    font-size: 12px; 
+    color: #8a8d91;
+  }
