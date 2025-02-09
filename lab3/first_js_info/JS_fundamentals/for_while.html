@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i = 3;
+
+        while (i) {
+            alert( i-- );
+        } // last one is 1
+
+
+        let i2 = 0;
+        while (++i2 < 5) alert( i2 );
+        /*
+        1, 2, 3, 4
+        */
+
+        let i3 = 0;
+        while (i3++ < 5) alert( i3 );
+        /*
+        1, 2, 3, 4, 5
+        */
+
+
+        for (let i = 0; i < 5; i++) alert( i );
+        // 0, 1, 2, 3, 4
+
+        for (let i = 0; i < 5; ++i) alert( i );
+        // 0, 1, 2, 3, 4
+
+
+        for (let i = 2; i <= 10; i += 2) {
+            alert(i);
+        }
+
+        for (let i = 2; i <= 10; i++) {
+            if (i % 2 != 0) continue;
+
+            alert(i);
+        }
+
+
+        for (let i = 0; i < 3; i++) {
+            alert( `number ${i}!` );
+        }
+
+        let index = 0;
+        while (index < 3) {
+            alert(`number ${i}!`);
+            index++;
+        }
+
+
+        while (true) {
+            let num = prompt("Enter number greater than 100", "");
+
+            if (num < 100) {
+                alert("Enter again!");
+            } else if (num == "" || num == null) {
+                break;
+            }
+        }
+
+        let num;
+
+        do {
+            num = prompt("Enter a number greater than 100?", 0);
+        } while (num <= 100 && num); // even simpler by solution tab
+
+
+        let n;
+
+        for (let i = 2; i <= n; i++) {
+            // CONTINUE WITH PRIME SOLUTION!
+        }
+    </script>
+</body>
+</html>

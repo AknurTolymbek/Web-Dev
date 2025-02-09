@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert( null || 2 || undefined ); // 2
+
+        alert( alert(1) || 2 || alert(3) ); // alerts 1, then alerts 2. Because, alert(1) executed, but returns undefined
+
+        alert( 1 && null && 2 ); // null
+
+        alert( alert(1) && alert(2) ); // alerts 1, then alerts undefined
+
+        alert( null || 2 && 3 || 4 ); // 3
+
+        let age = 19;
+
+        if (age >= 14 && age <= 90) {
+            // some logic
+        }
+
+        if (age < 14 || age > 90) {
+            // some logic
+        }
+
+        if (!(age >= 14 && age <= 90)) {
+            // some logic
+        }
+
+
+        if (-1 || 0) alert( 'first' ); // 'first'
+        if (-1 && 0) alert( 'second' ); // nothing to alert
+        if (null || -1 && 1) alert( 'third' ); // 'third'
+
+
+        let user = prompt("Who are you?", "");
+
+        if (user == "Admin") {
+            let password = prompt("Enter password", "");
+
+            if (password == "TheMaster") {
+                alert("Welcome!");
+            } else if (password == "" || password == null) {
+                alert("Canceled");
+            } else {
+                alert("Wrong password");
+            }
+        } else if (user == "" || user == null) {
+            alert("Canceled");
+        } else {
+            alert("I don't know you");
+        }
+    </script>
+</body>
+</html>
