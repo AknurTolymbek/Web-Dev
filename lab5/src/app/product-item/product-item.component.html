@@ -1,0 +1,16 @@
+<div class="product-item">
+    <div class="image-box">
+        <img class="image" [src]="product.image" [alt]="product.name" width="200">
+    </div>
+    <p class="product-name">{{ product.name }}</p>
+    <p class="product-description">{{ product.description }}</p>
+    <div class="product-footer">
+        <span class="product-rating">
+            <span class="stars">{{ '★'.repeat(product.rating) }}</span>
+            <span class="rating-number">{{ product.rating }}</span>
+        </span>
+        <a class="whatsapp-share" [href]="product.link" target="_blank">using Kaspi</a>
+        <button class="like" (click)="increaseLike()">{{ product.likes }} &#10084;</button>
+        <button class="remove" (click)="remove()">remove</button>
+    </div>
+</div>

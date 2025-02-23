@@ -1,0 +1,23 @@
+<div class="main-container">
+  <nav>
+      <h1>KaspiKZ</h1>
+  </nav>
+  
+  <h2 class="promo-heading">Welcome to kaspi online store!</h2>
+  
+  <div class="category-list">
+    <form>
+      <div class="list-option">
+        @for (category of categories; track category.id) {
+          <div class="categories-option">
+            <input type="radio" id="{{ category.name.toLowerCase() }}" name="categories" value="{{ category.name }}" (click)="setCategory(category.name)">
+            <label for="{{ category.name.toLowerCase() }}">{{ category.name }}</label>
+          </div>
+        }
+      </div>
+      <input class="clear" type="reset" value="clear" (click)="setCategory('')">
+    </form>
+  </div>
+
+  <app-product-list [currentCategory]="currentCategory" class="footer-margin" />
+</div>

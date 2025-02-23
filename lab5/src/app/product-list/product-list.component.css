@@ -1,0 +1,10 @@
+.result {
+    display: flex;
+    flex-flow: row wrap;
+    width: 30%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    column-gap: 5px;
+    row-gap: 10px;
+}

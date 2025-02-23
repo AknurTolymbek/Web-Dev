@@ -1,0 +1,11 @@
+<div class="result">
+    @if (showDefault == true) {
+        @for (product of products; track product.id) {
+            <app-product-item [product]="product" (removeEvent)="remove($event)" />
+        }
+    } @else {
+        @for (product of categoryProducts; track product.id) {
+            <app-product-item [product]="product" (removeEvent)="remove($event)" />
+        }
+    }
+</div>
