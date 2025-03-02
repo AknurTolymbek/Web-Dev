@@ -1,0 +1,16 @@
+<div class="container"></div>
+    <h1>{{ album.id }} - {{ album.title }}</h1>
+
+
+    <div class="new-title">
+        <input type="text" id="new-title-input" [(ngModel)]="newTitle">
+
+        <button (click)="save()">Save</button>
+    </div>
+
+    <div class="menu">
+        <button (click)="goBack()">Return</button>
+
+        <a [routerLink]="['/albums', album.id, 'photos']">Photos</a>
+    </div>
+</div>

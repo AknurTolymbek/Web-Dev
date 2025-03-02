@@ -1,0 +1,30 @@
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 50px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav {
+    background-color: bisque;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgb(190, 228, 250);
+}

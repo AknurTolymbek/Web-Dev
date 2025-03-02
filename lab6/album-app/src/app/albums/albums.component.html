@@ -1,0 +1,22 @@
+<div class="create-album"></div>
+    <label for="create-album">Enter album name</label>
+    <input type="text" id="create-album" [(ngModel)]="newTitle">
+    <button class="create-btn" (click)="create()">Create album</button>
+</div>
+
+@if (newlyCreated) {
+    <div class="newly-created">
+        <p>"{{ newlyCreated.id }} - {{newlyCreated.title}}"" is just created! Go to bottom to see it!</p>
+    </div>
+}
+
+<div class="result">
+    @for (album of albums; track album.id) {
+        <div class="album-container">
+            <div class="album-content">
+                <p><a [routerLink]="['/albums', album.id]">{{ album.id }} - {{ album.title }} by {{ album.userId }}</a></p>
+                <button (click)="remove(album.id)">Remove album</button>
+            </div>
+        </div>
+    }
+</div>

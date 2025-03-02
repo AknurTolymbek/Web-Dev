@@ -1,0 +1,10 @@
+<button (click)="goBack()">Return</button>
+
+<div class="result">
+    @for (photos of albumPhotos; track photos.id) {
+        <div class="photo-container">
+            <img src="{{ photos.photoUrl }}" alt="{{ photos.photoUrl }}">
+            <p>{{ photos.title }}</p>
+        </div>
+    }
+</div>

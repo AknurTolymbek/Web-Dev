@@ -1,0 +1,58 @@
+.result {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.album-container {
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.album-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: auto;
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: red;
+    border: 0;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.create-album {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#create-album {
+    flex-basis: 1;
+    width: 80%;
+}
+
+.newly-created {
+    width: 95%;
+    margin: auto;
+}
+
+.create-btn {
+    background-color: rgb(48, 172, 48);
+}

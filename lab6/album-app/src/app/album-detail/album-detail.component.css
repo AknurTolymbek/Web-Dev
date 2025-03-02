@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 15px;
+}
+
+.new-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-title-input {
+    flex-basis: 1;
+    width: 95%;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+button {
+    border: 1px solid black;
+    background-color: rgb(245, 245, 187);
+    padding: 0 5px;
+    border-radius: 3px;
+}
