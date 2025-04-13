@@ -1,0 +1,7 @@
+<h2>Vacancies</h2>
+<div *ngFor="let vacancy of vacancies" class="vacancy-card">
+  <h3>{{ vacancy.name }}</h3>
+  <p>{{ vacancy.description }}</p>
+  <p>Salary: ${{ vacancy.salary }}</p>
+</div>
+<a routerLink="/">Back to Companies</a>
