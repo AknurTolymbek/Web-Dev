@@ -1,0 +1,24 @@
+.home {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .home .order-now {
+    background-color: #f00;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
+  .home .order-now:hover {
+    background-color: #d00;
+  }
+  

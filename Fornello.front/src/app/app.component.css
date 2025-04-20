@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #cba6fe;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: rgb(14, 5, 5);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  

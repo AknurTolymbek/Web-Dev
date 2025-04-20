@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-family: sans-serif;
+  }
+  
+  .header-left .delivery-city {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .header-left .delivery-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  .rating {
+    color: rgb(236, 31, 31);
+    margin-left: 8px;
+  }
+  
+  .login-btn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #cba6fe;
+    color: rgb(12, 3, 3);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
